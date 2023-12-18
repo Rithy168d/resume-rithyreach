@@ -149,6 +149,10 @@ a {
 
 /* home component  */
 
+.img-logo{
+  width: 50px;
+}
+
 .khmer {
   position: absolute;
 }

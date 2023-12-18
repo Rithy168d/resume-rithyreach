@@ -1,5 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import pro from "../assets/react.png";
 
 const navlist = [
   {
@@ -41,7 +42,7 @@ const Navbar = () => {
 
   return (
     <nav className="header">
-      <img className="img-logo cursor" src="" alt="logo" />
+      <img className="img-logo cursor" src={pro} alt="logo" />
       <button className="toggler-btn cursor" onClick={() => setShow(!show)}>
         {show ? <X /> : <Menu />}
       </button>
