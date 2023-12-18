@@ -2,6 +2,7 @@ import pic1 from "../assets/frontend.png";
 import pic2 from "../assets/backend.png";
 import pic3 from "../assets/app.png";
 import { useState } from "react";
+import { CheckCheck, X } from "lucide-react";
 
 const datas = [
   {
@@ -10,7 +11,14 @@ const datas = [
     language: "Web",
     job: "Design",
     link: "views more ",
-    moreDetails: "one",
+    h1: "Web Design",
+    detail:
+      "Services with more experience that i have to create.Provided quality of client and companies",
+    p1: "I develop the user interface",
+    p2: "Web pages development",
+    p3: "I create ux interface",
+    p4: "I position your brand",
+    p5: "Design pages and look interesting of products for companies",
   },
   {
     id: 2,
@@ -18,7 +26,14 @@ const datas = [
     language: "Good",
     job: "Creative",
     link: "views more ",
-    moreDetails: "two",
+    h1: "Web Design",
+    detail:
+      "Services with more experience that i have to create.Provided quality of client and companies",
+    p1: "I develop the user interface",
+    p2: "Web pages development",
+    p3: "I create ux interface",
+    p4: "I position your brand",
+    p5: "Design pages and look interesting of products for companies",
   },
   {
     id: 3,
@@ -26,7 +41,14 @@ const datas = [
     language: "App",
     job: "Design",
     link: "views more ",
-    moreDetails: "three",
+    h1: "Web Design",
+    detail:
+      "Services with more experience that i have to create.Provided quality of client and companies",
+    p1: "I develop the user interface",
+    p2: "Web pages development",
+    p3: "I create ux interface",
+    p4: "I position your brand",
+    p5: "Design pages and look interesting of products for companies",
   },
 ];
 
@@ -73,9 +95,43 @@ const Services = () => {
               </div>
             </div>
             {selectedId === items.id && (
-              <div className="toggler-card">
-                <p>{items.moreDetails}</p>
-              </div>
+              <article className="toggler-card">
+                <div className="text-right" onClick={() => setSelectedId(null)}>
+                  <X />
+                </div>
+                <div className="text-center">
+                  <b className="text-center">{items.h1}</b>
+                  <p className="font-size-17">{items.detail}</p>
+                </div>
+
+                <div className="flex">
+                  <div className="">
+                    <CheckCheck />
+                  </div>
+                  <p className="font-size-17">{items.p2}</p>
+                </div>
+
+                <div className="flex">
+                  <div className="">
+                    <CheckCheck />
+                  </div>
+                  <p className="font-size-17">{items.p3}</p>
+                </div>
+
+                <div className="flex">
+                  <div className="">
+                    <CheckCheck />
+                  </div>
+                  <p className="font-size-17">{items.p4}</p>
+                </div>
+
+                <div className="flex">
+                  <div className="">
+                    <CheckCheck />
+                  </div>
+                  <p className="font-size-17">{items.p5}</p>
+                </div>
+              </article>
             )}
           </div>
         ))}
