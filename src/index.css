@@ -78,6 +78,7 @@ a {
   backdrop-filter: blur(10px);
   border: 1px solid #fff;
   padding: 1rem;
+  z-index: 5;
 }
 
 .cursor {
