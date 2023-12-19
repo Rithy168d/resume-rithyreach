@@ -410,9 +410,9 @@ a {
 }
 
 /* services  */
-/* #services {
+#services {
   position: relative;
-} */
+}
 
 .service-icon {
   max-width: 150px;
@@ -493,7 +493,7 @@ a {
 }
 
 .toggler-card {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -502,6 +502,7 @@ a {
   width: 95%;
   padding: 1rem;
   border-radius: 10px;
+  z-index: 10;
 }
 .toggler-card.show {
   display: block;
