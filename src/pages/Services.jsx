@@ -13,7 +13,7 @@ const datas = [
     link: "views more ",
     h1: "Web Design",
     detail:
-      "Services with more experience that i have to create.Provided quality of client and companies",
+      "Services with more experience that i have to created",
     p1: "I develop the user interface",
     p2: "Web pages development",
     p3: "I create ux interface",
@@ -28,7 +28,7 @@ const datas = [
     link: "views more ",
     h1: "Web Design",
     detail:
-      "Services with more experience that i have to create.Provided quality of client and companies",
+      "Services with more experience that i have to created.",
     p1: "I develop the user interface",
     p2: "Web pages development",
     p3: "I create ux interface",
@@ -43,7 +43,7 @@ const datas = [
     link: "views more ",
     h1: "Web Design",
     detail:
-      "Services with more experience that i have to create.Provided quality of client and companies",
+      "Services with more experience that i have to created",
     p1: "I develop the user interface",
     p2: "Web pages development",
     p3: "I create ux interface",
@@ -65,7 +65,7 @@ const Services = () => {
         <h2>Services</h2>
         <p>What i respond</p>
       </div>
-      <div className="grid-1x3-s">
+      <div className="grid-1x3">
         {datas.map((items) => (
           <div
             className="card-inner border-radius text-center-s"
