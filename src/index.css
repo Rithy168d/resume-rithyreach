@@ -415,7 +415,7 @@ a {
 }
 
 .relative{
-  position: relative;
+  position: absolute;
 }
 
 .service-icon {

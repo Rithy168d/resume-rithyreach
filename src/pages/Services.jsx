@@ -50,11 +50,11 @@ const datas = [
 ];
 
 const Services = () => {
-  const [selectedId, setSelectedId] = useState(null);
+  // const [selectedId, setSelectedId] = useState(null);
 
-  const handleClick = (id) => {
-    setSelectedId(id);
-  };
+  // const handleClick = (id) => {
+  //   setSelectedId(id);
+  // };
 
   return (
     <article className="padding-top" id="services">
@@ -75,7 +75,8 @@ const Services = () => {
             <p className="font-bold">{items.job}</p>
             <div className="flex-q">
               <div className="card-view">
-                <button className="cta" onClick={() => handleClick(items.id)}>
+              {/* onClick={() => handleClick(items.id)} */}
+                <button className="cta">
                   <span className="hover-underline-animation"> View more </span>
                   <svg
                     viewBox="0 0 46 16"
@@ -94,8 +95,7 @@ const Services = () => {
                 </button>
               </div>
             </div>
-            <div className="relative">
-              {selectedId === items.id && (
+              {/* {selectedId === items.id && (
                 <article className="toggler-card">
                   <div
                     className="text-right"
@@ -136,8 +136,7 @@ const Services = () => {
                     <p className="font-size-17">{items.p5}</p>
                   </div>
                 </article>
-              )}
-            </div>
+              )} */}
           </div>
         ))}
       </div>
