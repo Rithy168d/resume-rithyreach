@@ -12,8 +12,7 @@ const datas = [
     job: "Design",
     link: "views more ",
     h1: "Web Design",
-    detail:
-      "Services with more experience that i have to created",
+    detail: "Services with more experience that i have to created",
     p1: "I develop the user interface",
     p2: "Web pages development",
     p3: "I create ux interface",
@@ -27,8 +26,7 @@ const datas = [
     job: "Creative",
     link: "views more ",
     h1: "Web Design",
-    detail:
-      "Services with more experience that i have to created.",
+    detail: "Services with more experience that i have to created.",
     p1: "I develop the user interface",
     p2: "Web pages development",
     p3: "I create ux interface",
@@ -42,8 +40,7 @@ const datas = [
     job: "Design",
     link: "views more ",
     h1: "Web Design",
-    detail:
-      "Services with more experience that i have to created",
+    detail: "Services with more experience that i have to created",
     p1: "I develop the user interface",
     p2: "Web pages development",
     p3: "I create ux interface",
@@ -97,45 +94,50 @@ const Services = () => {
                 </button>
               </div>
             </div>
-            {selectedId === items.id && (
-              <article className="toggler-card">
-                <div className="text-right" onClick={() => setSelectedId(null)}>
-                  <X />
-                </div>
-                <div className="text-center">
-                  <b className="text-center">{items.h1}</b>
-                  <p className="font-size-17">{items.detail}</p>
-                </div>
-
-                <div className="flex">
-                  <div className="">
-                    <CheckCheck />
+            <div className="relative">
+              {selectedId === items.id && (
+                <article className="toggler-card">
+                  <div
+                    className="text-right"
+                    onClick={() => setSelectedId(null)}
+                  >
+                    <X />
                   </div>
-                  <p className="font-size-17">{items.p2}</p>
-                </div>
-
-                <div className="flex">
-                  <div className="">
-                    <CheckCheck />
+                  <div className="text-center">
+                    <b className="text-center">{items.h1}</b>
+                    <p className="font-size-17">{items.detail}</p>
                   </div>
-                  <p className="font-size-17">{items.p3}</p>
-                </div>
 
-                <div className="flex">
-                  <div className="">
-                    <CheckCheck />
+                  <div className="flex">
+                    <div className="">
+                      <CheckCheck />
+                    </div>
+                    <p className="font-size-17">{items.p2}</p>
                   </div>
-                  <p className="font-size-17">{items.p4}</p>
-                </div>
 
-                <div className="flex">
-                  <div className="">
-                    <CheckCheck />
+                  <div className="flex">
+                    <div className="">
+                      <CheckCheck />
+                    </div>
+                    <p className="font-size-17">{items.p3}</p>
                   </div>
-                  <p className="font-size-17">{items.p5}</p>
-                </div>
-              </article>
-            )}
+
+                  <div className="flex">
+                    <div className="">
+                      <CheckCheck />
+                    </div>
+                    <p className="font-size-17">{items.p4}</p>
+                  </div>
+
+                  <div className="flex">
+                    <div className="">
+                      <CheckCheck />
+                    </div>
+                    <p className="font-size-17">{items.p5}</p>
+                  </div>
+                </article>
+              )}
+            </div>
           </div>
         ))}
       </div>
