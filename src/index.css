@@ -78,7 +78,6 @@ a {
   backdrop-filter: blur(10px);
   border: 1px solid #fff;
   padding: 1rem;
-  z-index: 5;
 }
 
 .cursor {
@@ -411,9 +410,9 @@ a {
 }
 
 /* services  */
-#services {
+/* #services {
   position: relative;
-}
+} */
 
 .service-icon {
   max-width: 150px;
@@ -486,12 +485,12 @@ a {
 }
 
 /* cardServiced  */
+
 .toggler-card {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 10;
   background-color: #fff;
   border: 1px solid dodgerblue;
   width: 95%;
