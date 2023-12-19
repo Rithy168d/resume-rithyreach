@@ -486,6 +486,12 @@ a {
 
 /* cardServiced  */
 
+.grid-1x3-s {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
 .toggler-card {
   position: fixed;
   top: 50%;
@@ -505,7 +511,7 @@ a {
   text-align: right;
 }
 
-.font-size-17{
+.font-size-17 {
   font-size: 17px;
 }
 
@@ -832,6 +838,19 @@ footer {
   /* skill  */
   .grid-1x2-skills {
     grid-template-columns: repeat(1, 1fr);
+  }
+  /* services */
+  .grid-1x3-s {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .m-0{
+    margin: 0 auto;
+  }
+  .text-center-s{
+    text-align: center;
+  }
+  .card-view{
+    margin: 1rem auto;
   }
   /* qualifications */
   .text-center-q {

@@ -65,10 +65,13 @@ const Services = () => {
         <h2>Services</h2>
         <p>What i respond</p>
       </div>
-      <div className="grid-1x3">
+      <div className="grid-1x3-s">
         {datas.map((items) => (
-          <div className="card-inner border-radius" key={items.id}>
-            <div className="service-icon">
+          <div
+            className="card-inner border-radius text-center-s"
+            key={items.id}
+          >
+            <div className="service-icon m-0">
               <img src={items.img} alt="image icon" />
             </div>
             <p className="font-bold">{items.language}</p>
