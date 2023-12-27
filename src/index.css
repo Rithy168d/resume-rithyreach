@@ -500,7 +500,7 @@ a {
 }
 
 .toggler-card {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -835,6 +835,8 @@ footer {
     grid-row: 2;
   }
   /* about  */
+
+ 
 
   .about-image {
     grid-row: 1;
