@@ -50,11 +50,11 @@ const datas = [
 ];
 
 const Services = () => {
-  const [selectedId, setSelectedId] = useState(null);
+  // const [selectedId, setSelectedId] = useState(null);
 
-  const handleClick = (id) => {
-    setSelectedId(id);
-  };
+  // const handleClick = (id) => {
+  //   setSelectedId(id);
+  // };
 
   return (
     <article className="padding-top" id="services">
@@ -75,7 +75,8 @@ const Services = () => {
             <p className="font-bold">{items.job}</p>
             <div className="flex-q">
               <div className="card-view">
-                <button className="cta" onClick={() => handleClick(items.id)}>
+              {/* onClick={() => handleClick(items.id)} */}
+                <button className="cta" >
                   <span className="hover-underline-animation"> View more </span>
                   <svg
                     viewBox="0 0 46 16"
@@ -94,45 +95,48 @@ const Services = () => {
                 </button>
               </div>
             </div>
-            {selectedId === items.id && (
-              <article className="toggler-card">
-                <div className="text-right" onClick={() => setSelectedId(null)}>
-                  <X />
-                </div>
-                <div className="text-center">
-                  <b className="text-center">{items.h1}</b>
-                  <p className="font-size-17">{items.detail}</p>
-                </div>
-
-                <div className="flex">
-                  <div className="">
-                    <CheckCheck />
+              {/* {selectedId === items.id && (
+                <article className="toggler-card">
+                  <div
+                    className="text-right"
+                    onClick={() => setSelectedId(null)}
+                  >
+                    <X />
                   </div>
-                  <p className="font-size-17">{items.p2}</p>
-                </div>
-
-                <div className="flex">
-                  <div className="">
-                    <CheckCheck />
+                  <div className="text-center">
+                    <b className="text-center">{items.h1}</b>
+                    <p className="font-size-17">{items.detail}</p>
                   </div>
-                  <p className="font-size-17">{items.p3}</p>
-                </div>
 
-                <div className="flex">
-                  <div className="">
-                    <CheckCheck />
+                  <div className="flex">
+                    <div className="">
+                      <CheckCheck />
+                    </div>
+                    <p className="font-size-17">{items.p2}</p>
                   </div>
-                  <p className="font-size-17">{items.p4}</p>
-                </div>
 
-                <div className="flex">
-                  <div className="">
-                    <CheckCheck />
+                  <div className="flex">
+                    <div className="">
+                      <CheckCheck />
+                    </div>
+                    <p className="font-size-17">{items.p3}</p>
                   </div>
-                  <p className="font-size-17">{items.p5}</p>
-                </div>
-              </article>
-            )}
+
+                  <div className="flex">
+                    <div className="">
+                      <CheckCheck />
+                    </div>
+                    <p className="font-size-17">{items.p4}</p>
+                  </div>
+
+                  <div className="flex">
+                    <div className="">
+                      <CheckCheck />
+                    </div>
+                    <p className="font-size-17">{items.p5}</p>
+                  </div>
+                </article>
+              )} */}
           </div>
         ))}
       </div>
