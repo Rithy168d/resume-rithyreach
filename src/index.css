@@ -107,7 +107,9 @@ a {
 
 .grid-1x3 {
   display: grid;
-  grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
   gap: 15px;
   justify-content: center;
   align-content: center;
@@ -308,6 +310,7 @@ a {
 
 .ab-grid-1x3 {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-content: center;
@@ -414,7 +417,7 @@ a {
   position: relative;
 }
 
-.relative{
+.relative {
   position: absolute;
 }
 
@@ -504,7 +507,7 @@ a {
   background-color: #fff;
   border: 1px solid dodgerblue;
   width: 95%;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 10px;
   z-index: 10;
 }
@@ -832,10 +835,6 @@ footer {
     grid-row: 2;
   }
   /* about  */
-
-  .grid-1x3 {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
   .about-image {
     grid-row: 1;
