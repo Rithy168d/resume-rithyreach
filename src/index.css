@@ -107,8 +107,7 @@ a {
 
 .grid-1x3 {
   display: grid;
-  width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 15px;
   justify-content: center;
@@ -149,15 +148,56 @@ a {
   display: none;
 }
 
+.toggle {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.1);
+  line-height: 1;
+}
+
+.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.input {
+  display: none;
+}
+
+.icon {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  transition: transform 500ms;
+}
+
+.icon--moon {
+  transition-delay: 200ms;
+}
+
+.icon--sun {
+  transform: scale(0);
+}
+
+#switch:checked + .icon--moon {
+  transform: rotate(360deg) scale(0);
+}
+
+#switch:checked ~ .icon--sun {
+  transition-delay: 200ms;
+  transform: scale(1) rotate(360deg);
+}
+
 /* home component  */
-
-.img-logo {
-  width: 50px;
-}
-
-.khmer {
-  position: absolute;
-}
 
 .ralative {
   position: relative;
@@ -783,7 +823,7 @@ footer {
 
 /* responsive */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   h1 {
     font-size: 2.5rem;
   }
@@ -816,7 +856,7 @@ footer {
     transition: all 0.3s linear;
   }
   .navlist.active {
-    height: 60vh;
+    height: 100vh;
     padding-top: 10px;
   }
 
@@ -836,8 +876,6 @@ footer {
   }
   /* about  */
 
- 
-
   .about-image {
     grid-row: 1;
   }
@@ -848,6 +886,11 @@ footer {
   /* services */
 
   /* qualifications */
+
+  .grid-1x3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .text-center-q {
     text-align: center;
   }

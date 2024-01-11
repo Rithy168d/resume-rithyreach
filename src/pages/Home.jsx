@@ -15,7 +15,7 @@ const datas = [
     id: 1,
     greeting: "Hello, My name's",
     name: "Rithyreach",
-    detail: "I'm a student of department computer science, years three in the Royal University of Phnom Penh.",
+    detail: "I'm a student in  the Department Computer Science, years three at the Royal University of Phnom Penh.",
     job: "Front-end developer",
     img: pic,
   },
